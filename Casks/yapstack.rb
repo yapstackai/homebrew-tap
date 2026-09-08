@@ -13,7 +13,6 @@ cask "yapstack" do
   end
 
   auto_updates true
-  depends_on macos: :catalina
   depends_on arch: :arm64
 
   app "YapStack.app"
