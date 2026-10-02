@@ -1,8 +1,8 @@
 cask "yapstack" do
   version "1.0.0"
-  sha256 "2376842edf6d691cb04f194ea7183253d58e767ae9ae9a61bc02527db83dde77"
+  sha256 "c1b42ccd3ee86e7a2ef943fa5b1630ff26025b16458c9ff4bab7a2b58db279e4"
 
-  url "https://github.com/yapstackai/yapstack-releases/releases/download/v#{version}/yapstack_aarch64-dmg.dmg"
+  url "https://github.com/yapstackai/yapstack-releases/releases/download/v#{version}/yapstack_aarch64.dmg"
   name "YapStack"
   desc "Cloud speech-to-text desktop app"
   homepage "https://github.com/yapstackai/yapstack-releases"
