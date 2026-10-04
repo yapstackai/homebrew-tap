@@ -1,8 +1,16 @@
 cask "yapstack" do
   version "1.0.0"
-  sha256 "c1b42ccd3ee86e7a2ef943fa5b1630ff26025b16458c9ff4bab7a2b58db279e4"
 
-  url "https://github.com/yapstackai/yapstack-releases/releases/download/v#{version}/yapstack_aarch64.dmg"
+  on_arch :arm64 do
+    sha256 "a383eeef02c83b21fa038c9353ea284d66eacd0b82d60923984795812d65c8a6"
+    url "https://github.com/yapstackai/yapstack-releases/releases/download/v#{version}/yapstack_aarch64.dmg"
+  end
+
+  on_arch :intel do
+    sha256 "338bd4158b740db8822ea80d624a26eae660164f1a6fbf457a8f012c59c9e458"
+    url "https://github.com/yapstackai/yapstack-releases/releases/download/v#{version}/yapstack_x86_64.dmg"
+  end
+
   name "YapStack"
   desc "Cloud speech-to-text desktop app"
   homepage "https://github.com/yapstackai/yapstack-releases"
@@ -13,7 +21,6 @@ cask "yapstack" do
   end
 
   auto_updates true
-  depends_on arch: :arm64
 
   app "YapStack.app"
 
